@@ -9,11 +9,6 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      primaryColor: "#e74c3c",
-      primaryDarkColor: "#34495e",
-      customWhite: "#ecf0f1",
-      customBlack: "#1e272e",
-
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
