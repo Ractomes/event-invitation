@@ -9,6 +9,13 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      primaryColor: "#e74c3c",
+      primaryDarkColor: "#34495e",
+      customWhite: "#ecf0f1",
+      customBlack: "#1e272e",
+      customBlue: "#6E73F1",
+      customGray: "#858887",
+
       "primary-50": "#E8E8FD",
       "primary-100": "#D0D2FB",
       "primary-200": "#9DA0F6",
@@ -84,7 +91,6 @@ const config: Config = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      "black/500": "#131613",
     },
     extend: {
       backgroundImage: {

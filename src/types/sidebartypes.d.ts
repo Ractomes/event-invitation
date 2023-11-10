@@ -1,7 +1,7 @@
 export type List = {
   title: string;
   icon: React.ReactElement;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 
 export type Data = {
   title: string;
