@@ -1,6 +1,13 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ListSidebar from "../atoms/ListSidebar";
+import classNames from "classnames";
+
+//type
 import { Data } from "@/types/sidebartypes";
+
+//icon
 import {
   Overview,
   Manage_Task,
@@ -11,14 +18,18 @@ import {
   Bookmark_Book,
 } from "@/icon";
 
+//mui
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 // color={"#151DE0"}
-const GroupSidebar = () => {
-  const data: Data[] = [
+const GroupSidebar = (
+  { className, ...props }: React.HTMLAttributes<HTMLDivElement>,
+  data?: Data[]
+) => {
+  const dataDummy: Data[] = [
     {
       title: "Home",
       list: [
@@ -76,25 +87,24 @@ const GroupSidebar = () => {
   ];
 
   return (
-    <div>
-      {data.map(({ list, title }, index) => {
+    <div {...props} className={classNames("", className)}>
+      {dataDummy.map(({ list, title }, index) => {
         return (
-          <Accordion key={index}>
+          <Accordion key={index} disableGutters={true}>
             <AccordionSummary
+              className="relative left-4"
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h2 className="text-black/500 font-medium text-sm inline-flex">
+              <h2 className="text-customBlack font-medium text-sm relative right-8">
                 {title}
               </h2>
             </AccordionSummary>
-            <AccordionDetails>
-              <div className="flex flex-col gap-7">
-                {list.map(({ icon, title }, i) => {
-                  return <ListSidebar key={i} icon={icon} title={title} />;
-                })}
-              </div>
+            <AccordionDetails className="relative right-2 flex flex-col gap-7">
+              {list.map(({ icon, title }, i) => {
+                return <ListSidebar key={i} icon={icon} title={title} />;
+              })}
             </AccordionDetails>
           </Accordion>
         );

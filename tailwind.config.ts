@@ -13,6 +13,8 @@ const config: Config = {
       primaryDarkColor: "#34495e",
       customWhite: "#ecf0f1",
       customBlack: "#1e272e",
+      customBlue: "#6E73F1",
+      customGray: "#858887",
 
       inherit: colors.inherit,
       current: colors.current,
@@ -41,7 +43,6 @@ const config: Config = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      "black/500": "#131613",
     },
     extend: {
       backgroundImage: {
