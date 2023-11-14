@@ -5,7 +5,7 @@ import HeadSidebar from "../molecules/HeadSidebar";
 
 const Sidebar = () => {
   return (
-    <div className="w-fit gap-4 flex items-center justify-center flex-col relative">
+    <aside className="w-fit gap-4 inline-flex px-4 border-r-custom-black-50 items-center justify-center flex-col relative">
       <div className="w-56 flex flex-col gap-7">
         <HeadSidebar />
         <GroupSidebar />
@@ -14,7 +14,7 @@ const Sidebar = () => {
       <p className="text-customBlue font-normal text-base">
         Guide To Using the dashboard
       </p>
-    </div>
+    </aside>
   );
 };
 

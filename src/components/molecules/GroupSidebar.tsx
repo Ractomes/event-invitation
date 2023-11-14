@@ -97,7 +97,7 @@ const GroupSidebar = (
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <h2 className="text-customBlack font-medium text-sm relative right-8">
+              <h2 className="text-custom-black-450 font-medium text-sm relative right-8">
                 {title}
               </h2>
             </AccordionSummary>

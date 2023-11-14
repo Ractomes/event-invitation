@@ -6,3 +6,4 @@ export * from "./Guest_Statistics";
 export * from "./Templates";
 export * from "./Bookmark_Book";
 export * from "./Arrow";
+export * from "./Search";
