@@ -1,0 +1,18 @@
+
+.form-control {
+  padding-left: 2.600rem;
+  height: 33px;
+  width: 280px;
+}
+
+.form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  width: fit-content;
+  height: fit-content;
+  /* line-height: 2.375rem; */
+  text-align: center;
+  /* color: #aaa; */
+}
