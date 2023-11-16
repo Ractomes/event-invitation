@@ -6,9 +6,9 @@ import Navbar from "@/components/organisms/Navbar";
 export default function Page() {
   return (
     <StandardTemplate>
-      <Navbar/>
-      {/* <Sidebar /> */}
-      {/* <h1>miaw </h1> */}
+      {/* <Navbar/>
+      <Sidebar /> */}
+      <h1>miaw </h1>
     </StandardTemplate>
   );
 }

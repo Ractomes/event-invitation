@@ -6,7 +6,7 @@ import classNames from 'classnames'
 // type
 import {SearchType} from "@/types/searchtypes"
 
-const SearchInput = ({ className, onClick, ...props}:SearchType) => {
+export const SearchInput = ({ className, onClick, ...props}:SearchType) => {
   return (
     <div className={classNames('flex items-center',className)}>
       <span onClick={onClick} className={`${style["form-control-feedback"]} cursor-pointer hover:rotate-90 duration-150 ease-in-out`}>
