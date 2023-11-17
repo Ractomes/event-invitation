@@ -11,7 +11,7 @@ const Sidebar = () => {
         <GroupSidebar />
         <ShowAll />
       </div>
-      <p className="text-customBlue font-normal text-base">
+      <p className="text-primary-300 font-normal text-base w-60">
         Guide To Using the dashboard
       </p>
     </aside>

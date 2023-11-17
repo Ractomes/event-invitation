@@ -23,7 +23,7 @@ const Navbar = () => {
   ]
  
   return (
-    <nav className='flex items-center justify-between pl-4 relative'>
+    <nav className='flex items-center w-full pt-8 justify-between pl-1 relative'>
       <div className='flex gap-8 items-center'>
           <Dropdown Data={data}/>
           <SearchInput onClick={()=> console.log("test")

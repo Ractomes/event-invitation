@@ -14,7 +14,7 @@ const ShowAll = ({
         className
       )}
     >
-      <p className="text-customBlue font-normal text-base">See all Projects</p>
+      <p className="text-primary-300 font-normal text-base">See all Projects</p>
       <Image src="/images/arrow.png" alt="arrow" width={10} height={10} />
     </button>
   );
